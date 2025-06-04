@@ -63,7 +63,7 @@ Un componente padre llama a un componente hijo y le pasa información usando _pr
 
 **En el hijo (`hijo.component.ts`):**
 
-```ts
+```typescript
 import { Component, Input } from '@angular/core';
 
 @Component({
@@ -87,7 +87,7 @@ Dato desde el padre: {{dato}}
 
 **En el padre (`padre.component.ts`):**
 
-```ts
+```typescript
 export class PadreComponent {
   variable: number = 0;
 
@@ -118,7 +118,7 @@ Se utiliza `@Output` y `EventEmitter` para emitir eventos personalizados del hij
 ```
 
 **En el hijo (`hijo.component.ts`):**
-Modificado
+
 ```typescript
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
@@ -150,7 +150,7 @@ dato desde el padre: {{dato}}
 
 **En el padre (`padre.component.ts`):**
 
-```ts
+```typescript
 export class PadreComponent {
   variable: number = 0;
   mensaje: string = "";
@@ -205,7 +205,7 @@ ng g c /Components/card
 
 **TypeScript del padre (`cards.component.ts`):**
 
-```ts
+```typescript
 import { ARTICULOS, Articulo } from '../../Modelos/articulo';
 
 export class CardsComponent {
@@ -236,7 +236,7 @@ export class CardsComponent {
 
 **TypeScript del hijo (`card.component.ts`):**
 
-```ts
+```typescript
 import { Articulo } from '../../Modelos/articulo';
 
 export class CardComponent {
