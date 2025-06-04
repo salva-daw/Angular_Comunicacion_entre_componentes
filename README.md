@@ -32,7 +32,7 @@ ng g c Components/header
 
 **TypeScript (`header.component.ts`):**
 
-```ts
+```typescript
 @Component({
   selector: 'app-header',
   standalone: true,
