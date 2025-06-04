@@ -118,8 +118,8 @@ Se utiliza `@Output` y `EventEmitter` para emitir eventos personalizados del hij
 ```
 
 **En el hijo (`hijo.component.ts`):**
-
-```ts
+Modificado
+```typescript
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
